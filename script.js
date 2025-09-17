@@ -11,17 +11,18 @@ function addTask() {
 
     const taskList = document.getElementById('task-list');
 
-    // Create a new list item for the task
+
     const li = document.createElement('li');
     li.innerHTML = `
         ${taskText} <button onclick="deleteTask(this)">Delete</button>
     `;
     taskList.appendChild(li);
 
-    taskInput.value = ''; // Clear input after adding a task
+    taskInput.value = ''; 
 }
 
 function deleteTask(button) {
     const taskItem = button.parentElement;
-    taskItem.remove(); // Remove the task item from the list
+    taskItem.remove(); 
 }
+
